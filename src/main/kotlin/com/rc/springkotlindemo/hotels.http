@@ -1,0 +1,28 @@
+### Get Request that fetches all the Hotels
+GET http://localhost:8080/hotels/all
+Content-Type: application/json
+
+### Get Request that fetches Hotels by Name
+### GET http://localhost:8080/hotels/Pearl%20Continental-----%20 to resolve spaces
+GET http://localhost:8080/hotels/Ibis
+Content-Type: application/json
+
+### POST Request to checkin some guests
+POST http://localhost:8080/hotels/checkin
+Content-Type: application/json
+
+{
+  "hotelName": "Ibis",
+  "nbGuests": 3
+}
+
+### Post Request to checkout some guests
+POST http://localhost:8080/hotels/checkout
+Content-Type: application/json
+
+{
+  "hotelName": "Ibis",
+  "nbGuests": 2
+}
+
+###
