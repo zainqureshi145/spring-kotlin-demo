@@ -21,7 +21,5 @@ class DbSeeder(val hotelRepository: HotelRepository): CommandLineRunner {
         //this.hotelRepository.save(hotels)
         this.hotelRepository.saveAll(hotels)
         println("Database has been initialized")
-
-
     }
 }
